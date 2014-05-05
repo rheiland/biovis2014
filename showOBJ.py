@@ -4,7 +4,8 @@ from vtk import *
 
 print 'len(sys.argv) =',len(sys.argv)
 if len(sys.argv) < 2:
-  print 'Usage: ' + argv[0] + 'filename (without suffix)'
+  print 'Usage: ' + sys.argv[0] + ' filename (without suffix)'
+  print " e.g.  python showOBJ.py average_lh_pial"
   sys.exit(1)
 fname = sys.argv[1]
 
